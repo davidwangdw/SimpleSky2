@@ -11,6 +11,7 @@ import Foundation
 struct Weather {
     
     let summary: String
+    let city: String
     
     //here we put all the returned weather data into nice neat variables
     
@@ -19,10 +20,6 @@ struct Weather {
     //let timezone: String
     
     let dateAndTime: NSDate
-    
-    let city: String
-     
-     
     
     //this is specific weather data
     
@@ -62,8 +59,10 @@ struct Weather {
         
         summary = weatherDictCurrently?["summary"] as! String
         
+        city = weatherData["timezone"] as! String
         
-        /*city = weatherData["timezone"] as! String
+        
+        /*
         
         longitude = weatherData["longitude"] as! Double
         latitude = weatherData["latitude"] as! Double

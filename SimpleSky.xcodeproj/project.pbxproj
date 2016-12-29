@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2107260D1E15C11D003B01DF /* HourlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2107260C1E15C11D003B01DF /* HourlyViewController.swift */; };
 		217D9FB71E15941F004A25C0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217D9FB61E15941F004A25C0 /* CustomTabBar.swift */; };
 		219A6CA11E147C0A00850C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CA01E147C0A00850C38 /* AppDelegate.swift */; };
 		219A6CA31E147C0A00850C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CA21E147C0A00850C38 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2107260C1E15C11D003B01DF /* HourlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewController.swift; sourceTree = "<group>"; };
 		217D9FB61E15941F004A25C0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		219A6C9D1E147C0A00850C38 /* SimpleSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219A6CA01E147C0A00850C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +67,9 @@
 				219A6CAC1E147C0A00850C38 /* Info.plist */,
 				219A6CA91E147C0A00850C38 /* LaunchScreen.storyboard */,
 				219A6CA41E147C0A00850C38 /* Main.storyboard */,
-				217D9FB61E15941F004A25C0 /* CustomTabBar.swift */,
 				219A6CA21E147C0A00850C38 /* ViewController.swift */,
+				2107260C1E15C11D003B01DF /* HourlyViewController.swift */,
+				217D9FB61E15941F004A25C0 /* CustomTabBar.swift */,
 				219A6CB41E14B68900850C38 /* Weather.swift */,
 				219A6CB21E147C2400850C38 /* WeatherGetter.swift */,
 			);
@@ -149,6 +152,7 @@
 				219A6CB51E14B68900850C38 /* Weather.swift in Sources */,
 				217D9FB71E15941F004A25C0 /* CustomTabBar.swift in Sources */,
 				219A6CA31E147C0A00850C38 /* ViewController.swift in Sources */,
+				2107260D1E15C11D003B01DF /* HourlyViewController.swift in Sources */,
 				219A6CB31E147C2400850C38 /* WeatherGetter.swift in Sources */,
 				219A6CA11E147C0A00850C38 /* AppDelegate.swift in Sources */,
 			);

@@ -21,8 +21,16 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     var weather: WeatherGetter!
     
     
+    
+    
     @IBAction func getWeatherButton(_ sender: Any) {
-        weather.getWeather(coordinates: "40.781693,-73.966590")
+        //weather.getWeather(coordinates: "40.781693,-73.966590")
+        
+        //UserDefaults.standard.set(weather, forKey: "weather")
+        
+        let secondTab = self.tabBarController?.viewControllers?[1] as! HourlyViewController
+        
+        secondTab.cityLabel.text = "New York"
         
     }
     
@@ -35,7 +43,9 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
         
         weather = WeatherGetter(delegate: self)
 
+        let secondTab = self.tabBarController?.viewControllers?[1] as! HourlyViewController
         
+        secondTab.weather = weather
         
     }
 
@@ -50,7 +60,7 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     func didGetWeather(weather: Weather) {
         
         self.weatherSummary.text = weather.summary
-
+        self.cityLabel.text = weather.city
         
         
         
@@ -81,6 +91,9 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
         //}
         print("didNotGetWeather error: \(error)")
     }
+    
+    //following code is a little bit clusmy, will improve on later
+    //like playing hot potato with the weather struct
         
         
         // MARK: - UITextFieldDelegate and related methods
