@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var currentBackground: UIImageView!
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherSummary: UILabel!
@@ -21,9 +22,7 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     
     
     @IBAction func getWeatherButton(_ sender: Any) {
-        //weather.getWeather(coordinates: "40.781693,-73.966590")
-        
-        //weatherSummary.text = weather.summary
+        weather.getWeather(coordinates: "40.781693,-73.966590")
         
     }
     
@@ -31,12 +30,10 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.currentBackground.image = UIImage(named: "background")
+        
         weather = WeatherGetter(delegate: self)
-
-        weather.getWeather(coordinates: "40.781693,-73.966590")
-        
-        
-        //weather.getWeather(coordinates: "40.781693,-73.966590")
 
         
         
@@ -46,22 +43,14 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
-        
-    // MARK: -
-        
+    
     // MARK: WeatherGetterDelegate methods
     // -----------------------------------
         
     func didGetWeather(weather: Weather) {
         
-        print("didgetweather delegate method invoked")
-        
         self.weatherSummary.text = weather.summary
-        
-        // This method is called asynchronously, which means it won't execute in the main queue.
-        // ALl UI code needs to execute in the main queue, which is why we're wrapping the code
-        // that updates all the labels in a dispatch_async() call.
+
         
         
         

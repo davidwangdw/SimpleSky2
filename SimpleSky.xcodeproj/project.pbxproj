@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217D9FB71E15941F004A25C0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217D9FB61E15941F004A25C0 /* CustomTabBar.swift */; };
 		219A6CA11E147C0A00850C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CA01E147C0A00850C38 /* AppDelegate.swift */; };
 		219A6CA31E147C0A00850C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CA21E147C0A00850C38 /* ViewController.swift */; };
 		219A6CA61E147C0A00850C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A6CA41E147C0A00850C38 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		217D9FB61E15941F004A25C0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		219A6C9D1E147C0A00850C38 /* SimpleSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219A6CA01E147C0A00850C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219A6CA21E147C0A00850C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				219A6CAC1E147C0A00850C38 /* Info.plist */,
 				219A6CA91E147C0A00850C38 /* LaunchScreen.storyboard */,
 				219A6CA41E147C0A00850C38 /* Main.storyboard */,
+				217D9FB61E15941F004A25C0 /* CustomTabBar.swift */,
 				219A6CA21E147C0A00850C38 /* ViewController.swift */,
 				219A6CB41E14B68900850C38 /* Weather.swift */,
 				219A6CB21E147C2400850C38 /* WeatherGetter.swift */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				219A6CB51E14B68900850C38 /* Weather.swift in Sources */,
+				217D9FB71E15941F004A25C0 /* CustomTabBar.swift in Sources */,
 				219A6CA31E147C0A00850C38 /* ViewController.swift in Sources */,
 				219A6CB31E147C2400850C38 /* WeatherGetter.swift in Sources */,
 				219A6CA11E147C0A00850C38 /* AppDelegate.swift in Sources */,
@@ -271,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 98YT4HPVK9;
 				INFOPLIST_FILE = SimpleSky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "David-Wang.SimpleSky";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 98YT4HPVK9;
 				INFOPLIST_FILE = SimpleSky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "David-Wang.SimpleSky";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +316,7 @@
 				219A6CB11E147C0A00850C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
