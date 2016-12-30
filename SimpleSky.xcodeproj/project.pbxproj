@@ -64,12 +64,12 @@
 			children = (
 				219A6CA01E147C0A00850C38 /* AppDelegate.swift */,
 				219A6CA71E147C0A00850C38 /* Assets.xcassets */,
+				217D9FB61E15941F004A25C0 /* CustomTabBar.swift */,
+				2107260C1E15C11D003B01DF /* HourlyViewController.swift */,
 				219A6CAC1E147C0A00850C38 /* Info.plist */,
 				219A6CA91E147C0A00850C38 /* LaunchScreen.storyboard */,
 				219A6CA41E147C0A00850C38 /* Main.storyboard */,
 				219A6CA21E147C0A00850C38 /* ViewController.swift */,
-				2107260C1E15C11D003B01DF /* HourlyViewController.swift */,
-				217D9FB61E15941F004A25C0 /* CustomTabBar.swift */,
 				219A6CB41E14B68900850C38 /* Weather.swift */,
 				219A6CB21E147C2400850C38 /* WeatherGetter.swift */,
 			);
