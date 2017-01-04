@@ -17,6 +17,8 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var rainLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var sunriseLabel: UILabel!
+    @IBOutlet weak var sunsetLabel: UILabel!
     
     var weather: WeatherGetter!
     
@@ -24,13 +26,15 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     
     
     @IBAction func getWeatherButton(_ sender: Any) {
-        //weather.getWeather(coordinates: "40.781693,-73.966590")
+        weather.getWeather(coordinates: "40.781693,-73.966590")
+        
+        
         
         //UserDefaults.standard.set(weather, forKey: "weather")
         
-        let secondTab = self.tabBarController?.viewControllers?[1] as! HourlyViewController
+        //let secondTab = self.tabBarController?.viewControllers?[1] as! HourlyViewController
         
-        secondTab.cityLabel.text = "New York"
+        //secondTab.cityLabel.text = "New York"*/
         
     }
     
@@ -59,9 +63,29 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
         
     func didGetWeather(weather: Weather) {
         
-        self.weatherSummary.text = weather.summary
-        self.cityLabel.text = weather.city
         
+        
+        
+        DispatchQueue.main.async {
+            /*self.cityLabel.text = weather.city
+            self.weatherLabel.text = weather.weatherDescription
+            self.temperatureLabel.text = "\(Int(round(weather.tempCelsius)))°"
+            self.cloudCoverLabel.text = "\(weather.cloudCover)%"
+            self.windLabel.text = "\(weather.windSpeed) m/s"
+            
+            if let rain = weather.rainfallInLast3Hours {
+                self.rainLabel.text = "\(rain) mm"
+            }
+            else {
+                self.rainLabel.text = "None"
+            }
+            
+            self.humidityLabel.text = "\(weather.humidity)%"*/
+            self.weatherSummary.text = weather.summary
+            self.cityLabel.text = weather.city
+            print(weather.summary)
+        }
+
         
         
         //DispatchQueue.main.asynchronously() {
@@ -89,11 +113,23 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
             /*self.showSimpleAlert(title: "Can't get the weather",
                                  message: "The weather service isn't responding.")*/
         //}
+        DispatchQueue.main.async {
+            self.showSimpleAlert(title: "Can't get the weather",
+                                 message: "The weather service isn't responding.")
+        }
         print("didNotGetWeather error: \(error)")
     }
     
-    //following code is a little bit clusmy, will improve on later
-    //like playing hot potato with the weather struct
+    // Pressing the clear button on the text field (the x-in-a-circle button
+    // on the right side of the field)
+    /*func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        // Even though pressing the clear button clears the text field,
+        // this line is necessary. I'll explain in a later blog post.
+        textField.text = ""
+        
+        getCityWeatherButton.isEnabled = false
+        return true
+    }*/
         
         
         // MARK: - UITextFieldDelegate and related methods
@@ -115,13 +151,7 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
     }
         
         // Pressing the clear button on the text field (the x-in-a-circle button
-        // on the right side of the field)
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        textField.text = ""
-            
-        //getCityWeatherButton.enabled = false
-        return true
-    }
+
         
     // Pressing the return button on the keyboard should be like
     // pressing the "Get weather for the city above" button.
@@ -139,7 +169,8 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
         
     // MARK: - Utility methods
     // -----------------------
-        
+        */
+    
     func showSimpleAlert(title: String, message: String) {
         let alert = UIAlertController(
             title: title,
@@ -157,7 +188,7 @@ class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelega
             animated: true,
             completion: nil
         )
-    }*/
+    }
         
 }
     

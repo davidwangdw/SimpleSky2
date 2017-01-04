@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aBZ-Tk-Jdz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aBZ-Tk-Jdz">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -98,6 +98,8 @@
                         <outlet property="currentBackground" destination="elq-Bb-6jI" id="l5k-7B-TvZ"/>
                         <outlet property="humidityLabel" destination="s22-EW-6aA" id="Vw0-YP-0u5"/>
                         <outlet property="rainLabel" destination="k3j-WM-p8w" id="d09-w6-Pm4"/>
+                        <outlet property="sunriseLabel" destination="Ztq-qF-lpB" id="CaM-5g-EKs"/>
+                        <outlet property="sunsetLabel" destination="tMH-14-xzA" id="Hkg-f5-aCW"/>
                         <outlet property="temperatureLabel" destination="VBk-QL-Kxk" id="0VB-Uc-g2Y"/>
                         <outlet property="weatherSummary" destination="VaS-Vz-vhQ" id="aeH-tu-SsO"/>
                     </connections>
@@ -200,7 +202,6 @@
         <!--Daily-->
         <scene sceneID="myt-vM-AMZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JlJ-yZ-Jjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="k4i-FX-bF7" customClass="HourlyViewController" customModule="SimpleSky" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4k1-C4-hOi"/>
@@ -247,6 +248,7 @@
                         <outlet property="cityLabel" destination="P7B-LY-3Gv" id="6dw-EL-txu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlJ-yZ-Jjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2850" y="125.70422535211267"/>
         </scene>
