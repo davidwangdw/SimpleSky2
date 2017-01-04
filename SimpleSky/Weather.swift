@@ -14,7 +14,7 @@ struct Weather {
     
     //current weather data
     let summary: String
-    let timezone: String
+    //let timezone: String
     
     let city: String
     /*let country: String

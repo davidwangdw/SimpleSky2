@@ -16,6 +16,10 @@
 		219A6CAB1E147C0A00850C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A6CA91E147C0A00850C38 /* LaunchScreen.storyboard */; };
 		219A6CB31E147C2400850C38 /* WeatherGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CB21E147C2400850C38 /* WeatherGetter.swift */; };
 		219A6CB51E14B68900850C38 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A6CB41E14B68900850C38 /* Weather.swift */; };
+		21C06F131E1CAC6E00BDE030 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06F121E1CAC6E00BDE030 /* PageViewController.swift */; };
+		21C06F161E1CB07000BDE030 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06F141E1CB07000BDE030 /* TutorialPageViewController.swift */; };
+		21C06F171E1CB07000BDE030 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06F151E1CB07000BDE030 /* TutorialViewController.swift */; };
+		21C06F1A1E1CB0A600BDE030 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06F181E1CB0A600BDE030 /* Main2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		219A6CAC1E147C0A00850C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219A6CB21E147C2400850C38 /* WeatherGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherGetter.swift; sourceTree = "<group>"; };
 		219A6CB41E14B68900850C38 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		21C06F121E1CAC6E00BDE030 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		21C06F141E1CB07000BDE030 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPageViewController.swift; path = "../../../../Downloads/UIPageViewController-Post-master/UIPageViewController Post/TutorialPageViewController.swift"; sourceTree = "<group>"; };
+		21C06F151E1CB07000BDE030 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = "../../../../Downloads/UIPageViewController-Post-master/UIPageViewController Post/TutorialViewController.swift"; sourceTree = "<group>"; };
+		21C06F191E1CB0A600BDE030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/UIPageViewController-Post-master/UIPageViewController Post/Base.lproj/Main2.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				219A6CAC1E147C0A00850C38 /* Info.plist */,
 				219A6CA91E147C0A00850C38 /* LaunchScreen.storyboard */,
 				219A6CA41E147C0A00850C38 /* Main.storyboard */,
+				21C06F181E1CB0A600BDE030 /* Main2.storyboard */,
+				21C06F141E1CB07000BDE030 /* TutorialPageViewController.swift */,
+				21C06F151E1CB07000BDE030 /* TutorialViewController.swift */,
+				21C06F121E1CAC6E00BDE030 /* PageViewController.swift */,
 				219A6CA21E147C0A00850C38 /* ViewController.swift */,
 				219A6CB41E14B68900850C38 /* Weather.swift */,
 				219A6CB21E147C2400850C38 /* WeatherGetter.swift */,
@@ -138,6 +150,7 @@
 			files = (
 				219A6CAB1E147C0A00850C38 /* LaunchScreen.storyboard in Resources */,
 				219A6CA81E147C0A00850C38 /* Assets.xcassets in Resources */,
+				21C06F1A1E1CB0A600BDE030 /* Main2.storyboard in Resources */,
 				219A6CA61E147C0A00850C38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,10 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				219A6CB51E14B68900850C38 /* Weather.swift in Sources */,
+				21C06F171E1CB07000BDE030 /* TutorialViewController.swift in Sources */,
+				21C06F131E1CAC6E00BDE030 /* PageViewController.swift in Sources */,
 				217D9FB71E15941F004A25C0 /* CustomTabBar.swift in Sources */,
 				219A6CA31E147C0A00850C38 /* ViewController.swift in Sources */,
 				2107260D1E15C11D003B01DF /* HourlyViewController.swift in Sources */,
 				219A6CB31E147C2400850C38 /* WeatherGetter.swift in Sources */,
+				21C06F161E1CB07000BDE030 /* TutorialPageViewController.swift in Sources */,
 				219A6CA11E147C0A00850C38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +191,14 @@
 				219A6CAA1E147C0A00850C38 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21C06F181E1CB0A600BDE030 /* Main2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C06F191E1CB0A600BDE030 /* Base */,
+			);
+			name = Main2.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
