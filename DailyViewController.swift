@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HourlyViewController: UIViewController {
+class DailyViewController: UIViewController {
     
     @IBOutlet weak var cityLabel: UILabel!
     

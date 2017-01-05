@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelegate {
+class CurrentViewController: UIViewController, WeatherGetterDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var currentBackground: UIImageView!
     
